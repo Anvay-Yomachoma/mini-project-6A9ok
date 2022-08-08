@@ -18,7 +18,7 @@ router.get('/', function (req, res, next) {
 
 
 router.post('/form', (req, res) => {
-  const { noMembers, membersDetails, semester, subject, subCode, title, assignedFaculty, projLink, teamId,floc } = req.body;
+  const { membersDetails, semester, subject, title, assignedFaculty, projLink, teamId,floc } = req.body;
 
 
   const members = JSON.parse(membersDetails)
