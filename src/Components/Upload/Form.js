@@ -102,7 +102,7 @@ function Form() {
     const upload = async (project) => {
         // const response = await fetch("http://localhost:6000/upload") ;
         fetch("http://localhost:9000/upload").then(response => {
-            return response.json().data.floc;
+            return response.data.floc;
         }).then(floc => {
             return { ...project, report: floc };
         }).then(project => {
